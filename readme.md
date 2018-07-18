@@ -1,0 +1,1 @@
+This is simple project demonstrates how asynchronous TCP socket API can be done.

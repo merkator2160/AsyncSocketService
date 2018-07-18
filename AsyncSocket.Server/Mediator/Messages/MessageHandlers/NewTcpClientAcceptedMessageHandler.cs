@@ -7,6 +7,7 @@ using Mediator.Net;
 using Mediator.Net.Context;
 using Mediator.Net.Contracts;
 using System;
+using System.Diagnostics;
 using System.Net.Sockets;
 using System.Threading;
 using System.Threading.Tasks;
@@ -62,7 +63,8 @@ namespace AsyncSocket.Server.Mediator.Messages.MessageHandlers
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                Debug.WriteLine(ex.Message);
+                throw;
             }
         }
         private async Task<NetworkMessage> HandleResponseAsync(NetworkMessage request)
