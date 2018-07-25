@@ -1,1 +1,1 @@
-This is simple project demonstrates how asynchronous TCP socket API can be done.
+This is simple project demonstrates how asynchronous TCP socket API can be implemented.
